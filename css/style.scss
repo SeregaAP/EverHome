@@ -1,0 +1,96 @@
+/*
+*loading fonts femaly
+*/
+@font-face {
+	font-family: 'Century';
+	src: url('../fonts/CenturySchoolbook/Century-Schoolbook-Bold.eot');
+	src: local('☺'), url('../fonts/CenturySchoolbook/Century-Schoolbook-Bold.woff') format('woff'), url('../fonts/CenturySchoolbook/Century-Schoolbook-Bold.ttf') format('truetype'), url('../fonts/CenturySchoolbook/Century-Schoolbook-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato/Lato-Bold.eot');
+	src: local('☺'), url('../fonts/Lato/Lato-Bold.woff') format('woff'), url('../fonts/Lato/Lato-Bold.ttf') format('truetype'), url('../fonts/Lato/Lato-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato/Lato-Regular.eot');
+	src: local('☺'), url('../fonts/Lato/Lato-Regular.woff') format('woff'), url('../fonts/Lato/Lato-Regular.ttf') format('truetype'), url('../fonts/Lato/Lato-Regular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Manrope';
+	src: url('../fonts/Manrope/Manrope-Bold.eot');
+	src: local('☺'), url('../fonts/Manrope/Manrope-Bold.woff') format('woff'), url('../fonts/Manrope/Manrope-Bold.ttf') format('truetype'), url('../fonts/Manrope/Manrope-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Manrope';
+	src: url('../fonts/Manrope/Manrope-Medium.eot');
+	src: local('☺'), url('../fonts/Manrope/Manrope-Medium.woff') format('woff'), url('../fonts/Manrope/Manrope-Medium.ttf') format('truetype'), url('../fonts/Manrope/Manrope-Medium.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Manrope';
+	src: url('../fonts/Manrope/Manrope-Regular.eot');
+	src: local('☺'), url('../fonts/Manrope/Manrope-Regular.woff') format('woff'), url('../fonts/Manrope/Manrope-Regular.ttf') format('truetype'), url('../fonts/Manrope/Manrope-Regular.svg') format('svg');
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'MetaPro';
+	src: url('../fonts/MetaPro/MetaPro-Bold.eot');
+	src: local('☺'), url('../fonts/MetaPro/MetaPro-Bold.woff') format('woff'), url('../fonts/MetaPro/MetaPro-Bold.ttf') format('truetype'), url('../fonts/MetaPro/MetaPro-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+/*
+*color project
+*/
+$btn-color-idle: linear-gradient(267.65deg, #0199F5 17.69%, #00B6F8 49.37%, #0199F5 94.82%);
+$btn-color-hover: linear-gradient(267.65deg, #008CE0 17.69%, #1FBEF8 49.37%, #0082D0 94.82%);
+$dicorate-el-color: linear-gradient(266.4deg, #82CD80 0%, #95EF92 100%);
+$section-color-blue: #DBEAFB;
+$txt-color-cyan: #065788;
+$txt-color-blue: #0071B6;
+$txt-color-25: #252525;
+$txt-color-24: #242424;
+/*
+*initialization project
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li,a,p,span{
+    text-decoration: none;
+    list-style: none;
+    color: $txt-color-25;
+}
+a:hover{
+    text-decoration: none;
+}
+h1{
+    font-family: 'MetaPro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    color: $txt-color-25;
+}
+.h2,.titleH2{
+    font-family: 'Century';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    color: $txt-color-blue;
+    span{
+        color: $txt-color-25;
+    }
+}

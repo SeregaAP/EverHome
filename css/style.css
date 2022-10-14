@@ -1,0 +1,103 @@
+@charset "UTF-8";
+/*
+*loading fonts femaly
+*/
+@font-face {
+  font-family: 'Century';
+  src: url("../fonts/CenturySchoolbook/Century-Schoolbook-Bold.eot");
+  src: local("☺"), url("../fonts/CenturySchoolbook/Century-Schoolbook-Bold.woff") format("woff"), url("../fonts/CenturySchoolbook/Century-Schoolbook-Bold.ttf") format("truetype"), url("../fonts/CenturySchoolbook/Century-Schoolbook-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato/Lato-Bold.eot");
+  src: local("☺"), url("../fonts/Lato/Lato-Bold.woff") format("woff"), url("../fonts/Lato/Lato-Bold.ttf") format("truetype"), url("../fonts/Lato/Lato-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato/Lato-Regular.eot");
+  src: local("☺"), url("../fonts/Lato/Lato-Regular.woff") format("woff"), url("../fonts/Lato/Lato-Regular.ttf") format("truetype"), url("../fonts/Lato/Lato-Regular.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url("../fonts/Manrope/Manrope-Bold.eot");
+  src: local("☺"), url("../fonts/Manrope/Manrope-Bold.woff") format("woff"), url("../fonts/Manrope/Manrope-Bold.ttf") format("truetype"), url("../fonts/Manrope/Manrope-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url("../fonts/Manrope/Manrope-Medium.eot");
+  src: local("☺"), url("../fonts/Manrope/Manrope-Medium.woff") format("woff"), url("../fonts/Manrope/Manrope-Medium.ttf") format("truetype"), url("../fonts/Manrope/Manrope-Medium.svg") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Manrope';
+  src: url("../fonts/Manrope/Manrope-Regular.eot");
+  src: local("☺"), url("../fonts/Manrope/Manrope-Regular.woff") format("woff"), url("../fonts/Manrope/Manrope-Regular.ttf") format("truetype"), url("../fonts/Manrope/Manrope-Regular.svg") format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'MetaPro';
+  src: url("../fonts/MetaPro/MetaPro-Bold.eot");
+  src: local("☺"), url("../fonts/MetaPro/MetaPro-Bold.woff") format("woff"), url("../fonts/MetaPro/MetaPro-Bold.ttf") format("truetype"), url("../fonts/MetaPro/MetaPro-Bold.svg") format("svg");
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*
+*color project
+*/
+/*
+*initialization project
+*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li, a, p, span {
+  text-decoration: none;
+  list-style: none;
+  color: #252525;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'MetaPro';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  color: #252525;
+}
+
+.h2, .titleH2 {
+  font-family: 'Century';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  color: #0071B6;
+}
+
+.h2 span, .titleH2 span {
+  color: #252525;
+}
+/*# sourceMappingURL=style.css.map */

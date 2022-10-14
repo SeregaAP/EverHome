@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Century-Schoolbook';
+    src: url('Century-Schoolbook-Bold.eot');
+    src: url('Century-Schoolbook-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Century-Schoolbook-Bold.woff2') format('woff2'),
+        url('Century-Schoolbook-Bold.woff') format('woff'),
+        url('Century-Schoolbook-Bold.ttf') format('truetype'),
+        url('Century-Schoolbook-Bold.svg#Century-Schoolbook-Bold') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MetaPro';
+    src: url('MetaPro-Bold.eot');
+    src: url('MetaPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('MetaPro-Bold.woff2') format('woff2'),
+        url('MetaPro-Bold.woff') format('woff'),
+        url('MetaPro-Bold.ttf') format('truetype'),
+        url('MetaPro-Bold.svg#MetaPro-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
