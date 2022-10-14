@@ -69,6 +69,9 @@ $txt-color-24: #242424;
     padding: 0;
     box-sizing: border-box;
 }
+body{
+	height: 2000px;
+}
 li,a,p,span{
     text-decoration: none;
     list-style: none;
@@ -94,3 +97,140 @@ h1{
         color: $txt-color-25;
     }
 }
+
+/*
+*project create 
+*/
+/*header*/
+.header{
+    position: fixed;
+    width: 100%;
+    padding: 15px 0;
+    transition: all 0.2s ease-in-out;
+    z-index: 2000;
+    .header_content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .header_logo{
+            img{
+                width: 50px;
+            }
+        }
+        .header_menu{
+            ul{
+                display: flex;
+                align-items: center;
+                margin: 0;
+                li{
+                    margin: 0 25px;
+                    .menu-link{
+						font-family: 'Manrope';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+						color: $txt-color-cyan;
+                        transition: color 0.2s ease-in-out;
+                    }
+                    &:hover{
+                        .menu-link{
+                            /*color: $color-txt-hover;*/
+                        }
+                    }
+                }
+            }
+        }
+        .header_phone{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            .menu-link_popup{
+                display: none;
+                .btn-info-company{
+                    .btn-inf-phone{
+                        cursor: pointer;
+                    }
+                }
+            }
+            a{
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                color: $txt-color-blue;
+				img{
+					margin-right: 7px;
+				}
+            }
+        }
+    }
+}
+/*header*/
+/*header scroll*/
+.header_scroll{
+    padding: 10px 0;
+    background: #F0F0F0;
+    .header_content{
+        .header_logo{
+            img{
+                width: 80px;
+            }
+        }
+        .header_phone{
+            flex-direction: row;
+            align-items: center;
+            .header_phone_phone{
+                margin-right: 10px;
+            }
+            .menu-link_popup{
+                display: block;
+                .btn-info-company{
+                    display: flex;
+                    align-items: center;
+                    .pop-inf-phone-desk{
+                        position: relative;
+                        display: none;
+                        .pop-inf-txt{
+                            position: absolute;
+                            right: 0;
+                            top: 10px;
+                            padding: 20px;
+                            background: #EEF7FF;
+                            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+                            a{
+                                display: block;
+                                margin-bottom: 7px;
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 14px;
+                                color: #181818;
+                                padding-bottom: 5px;
+                                border-bottom: 1px solid #41404234;
+                            }
+                            .pop-inf-txt-soc{
+                                padding: 5px 0;
+                                display: flex;
+                                justify-content: space-between;
+                                a{
+                                    border: none;
+                                    margin-bottom: 0;
+                                    padding-bottom: 0;
+                                    img{
+                                        pointer-events: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .pop-inf-phone-actives{
+                        display: block;
+                    }
+                }
+            }
+            span{
+                display: none;
+            }
+        }
+    }
+}
+/*header scroll*/
