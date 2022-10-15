@@ -97,6 +97,39 @@ h1{
         color: $txt-color-25;
     }
 }
+.btn-all{
+    position: relative;
+    width: 320px;
+    height: 80px;
+    a{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background: $btn-color-idle;
+        border-radius: 12px;
+        font-family: 'Lato';
+        text-transform: uppercase;
+        color: #fff;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        z-index: 10;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        bottom: -7px;
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+        background: #0185F0;
+        box-shadow: 0px 0px 20px #01A5F7;
+    }
+}
 
 /*
 *project create 
@@ -130,11 +163,26 @@ h1{
                         font-weight: 400;
                         font-size: 16px;
 						color: $txt-color-cyan;
-                        transition: color 0.2s ease-in-out;
+                        transition: color 0.2s ease-in;
+						&::after{
+							content: '';
+							display: block;
+							width: 0;
+							height: 1px;
+							background: $txt-color-cyan;
+							transition: width 0.3s ease-in-out;
+						}
                     }
                     &:hover{
                         .menu-link{
-                            /*color: $color-txt-hover;*/
+                            font-family: 'Manrope';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 16px;
+						    color: $txt-color-cyan;
+							&::after{
+								width: 100%;
+							}
                         }
                     }
                 }
@@ -146,8 +194,8 @@ h1{
             align-items: flex-end;
             .menu-link_popup{
                 display: none;
-                .btn-info-company{
-                    .btn-inf-phone{
+                .info-company{
+                    .btn-phone-popup{
                         cursor: pointer;
                     }
                 }
@@ -169,61 +217,113 @@ h1{
 /*header scroll*/
 .header_scroll{
     padding: 10px 0;
-    background: #F0F0F0;
+    background: #ECECEC;
     .header_content{
         .header_logo{
             img{
-                width: 80px;
+                width: 50px;
             }
         }
         .header_phone{
             flex-direction: row;
             align-items: center;
             .header_phone_phone{
-                margin-right: 10px;
+                display: none;
             }
             .menu-link_popup{
                 display: block;
-                .btn-info-company{
+                .info-company{
                     display: flex;
                     align-items: center;
-                    .pop-inf-phone-desk{
+                    .btn-header{
                         position: relative;
-                        display: none;
-                        .pop-inf-txt{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 35px;
+                        height: 35px;
+                        background: #0199F5;
+                        border-radius: 50%;
+                        margin-left: 7px;
+                        transition: 0.2s ease;
+                        cursor: pointer;
+                        img{
+                            margin: 0;
+                            width: 23px;
+                            height: 23px;
+                        }
+                        &:hover{
+                            box-shadow: 0 0 12px #035b92;
+                        }
+                        .btn-header__popup{
+                            display: none;
                             position: absolute;
-                            right: 0;
-                            top: 10px;
+                            width: 200px; 
                             padding: 20px;
-                            background: #EEF7FF;
-                            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-                            a{
-                                display: block;
-                                margin-bottom: 7px;
-                                font-style: normal;
-                                font-weight: 400;
-                                font-size: 14px;
-                                color: #181818;
-                                padding-bottom: 5px;
-                                border-bottom: 1px solid #41404234;
-                            }
-                            .pop-inf-txt-soc{
+                            height: 250px;
+                            bottom: -260px;
+                            right: 0;
+                            box-shadow: 0 0 10px #888686a2;
+                            background: #ECECEC;
+                            .btn-header__popup_itm{
+                                border-bottom: 1px solid #888686a2;
+                                margin-bottom: 10px;
                                 padding: 5px 0;
-                                display: flex;
-                                justify-content: space-between;
+                                p{
+                                    font-size: 16px;
+                                    font-family: 'Manrope';
+                                    font-weight: 400;
+                                    margin: 0;
+                                }
                                 a{
-                                    border: none;
-                                    margin-bottom: 0;
-                                    padding-bottom: 0;
-                                    img{
-                                        pointer-events: none;
+                                    font-size: 16px;
+                                    font-weight: 400;
+                                    color: $txt-color-cyan;
+                                    i{
+                                        margin-right: 5px;
+                                    }
+                                }
+                                &:hover{
+                                    border-color: #00B6F8;
+                                    a{
+                                        i{
+                                            color: #00B6F8;
+                                        }
+                                    }
+                                }
+                            }
+                            .btn-header__popup-social{
+                                display: flex;
+                                justify-content: center;
+                                padding-top: 15px;
+                                .btn-header__popup-social-itm{
+                                    width: 29px;
+                                    height: 29px;
+                                    border-radius: 50%;
+                                    background: #0199F5;
+                                    margin: 0 3px;
+                                    a{
+                                        position: relative;
+                                        display: block;
+                                        width: 29px;
+                                        height: 29px;
+                                        img{
+                                            position: absolute;
+                                            display: block;
+                                            width: 20px;
+                                            height: 20px;
+                                            top: 50%;
+                                            left: 50%;
+                                            transform: translate(-50%,-50%);
+                                            color: #fff;
+                                        }
+                                    }
+                                    &:hover{
+                                        box-shadow: 0 0 10px #888686a2;
                                     }
                                 }
                             }
                         }
-                    }
-                    .pop-inf-phone-actives{
-                        display: block;
                     }
                 }
             }
@@ -234,3 +334,56 @@ h1{
     }
 }
 /*header scroll*/
+/*section offer*/
+.offer{
+    position: relative;
+    .offer__slider{
+        .slick-list{
+            overflow: hidden;
+            .slick-track{
+                display: flex;
+            }
+        }
+    }
+    .offer_block{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        .offer_block_cont{
+            position: relative;
+            top: 10%;
+            
+            h1{
+                max-width: 700px;
+                font-family: 'MetaPro';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 40px;
+                line-height: 130%;
+                margin-bottom: 15px;
+                
+            }
+            p{
+                
+                color: $txt-color-24;
+                display: block;
+                padding: 6px 8px;
+                max-width: 460px;
+                font-family: 'Manrope';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 130%;
+                margin-bottom: 15px;
+            }
+            .offer_subtitle{
+                color: $txt-color-25;
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 150%;
+            }
+        }
+    }
+}
