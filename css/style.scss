@@ -517,6 +517,14 @@ h2{
     }
     .Trusted{
         position: relative;
+        .trusted_dicorate{
+            position: absolute;
+            left: 0;
+            bottom: -200px;
+            img{
+                width: 250px;
+            }
+        }
         .Trusted__content{
             position: relative;
             top: 100px;
@@ -559,3 +567,160 @@ h2{
     }
 }
 /*section about*/
+/*section oportunity*/
+.oportunity{
+    padding: 200px 0 50px 0;
+    background: $section-color-blue;
+    .titles{
+        margin-bottom: 30px;
+        .titles__cont{
+            text-align: center;
+            h2{
+                margin-bottom: 20px;
+            }
+            p{
+                font-family: 'Manrope';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 150%;
+                color: $txt-color-25;
+            }
+        }
+    }
+    .oportunity-garant{
+        .oportunity-garant-cont{
+            background: #FFFFFF;
+            border-radius: 12px;
+            padding: 50px 30px;
+            h4{
+                font-family: 'Manrope';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 130%;
+                color: $txt-color-25;
+                margin-bottom: 20px;
+            }
+            .oportunity-garant-list{
+                .oportunity-garant-list-itm{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px;
+                    img{
+                        margin-right: 10px;
+                    }
+                    p{
+                        font-family: 'Manrope';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 16px;
+                        line-height: 130%;
+                        color: $txt-color-25;
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        .oportunity-garant-form{
+            background: #FFFFFF;
+            border-radius: 12px;
+            padding: 50px 30px;
+            h4{
+                font-family: 'Manrope';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 125%;
+                color: $txt-color-25;
+                margin-bottom: 12px;
+            }
+            p{
+                font-family: 'Manrope';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 130%;
+                color: $txt-color-25;
+            }
+            .input-groups{
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                border-bottom: 1px solid #72717146;
+                margin-bottom: 27px;
+                img{
+                    margin-right: 15px;
+                }
+                input{
+                    outline: none;
+                    border: none;
+                    font-family: 'Lato';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: $txt-color-25;
+                }
+            }
+        }
+    }
+    .experience{
+        padding: 80px 0 40px 0;
+        .titles{
+            .titles__cont{
+                text-align: center;
+                h2{
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 44px;
+                    line-height: 120%;
+                }
+                p{
+                    font-family: 'Manrope';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 150%;
+                    color: $txt-color-25;
+                }
+            }
+        }
+        .experience-cont{
+            .experience-block{
+                display: flex;
+                .experience-col{
+                    width: 50%;
+                }
+                .experience-col-one{
+                    background: #FFFFFF;
+                    border-radius: 12px 0 0 12px;
+                    padding: 30px;
+                    display: flex;
+                    .experience-col-txt{
+                        p{
+                            font-family: 'Manrope';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 17px;
+                            line-height: 140%;
+                            color: $txt-color-25;
+                            max-width: 300px;
+                            span{
+                                color: $txt-color-blue;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                    img{
+                      
+                    }
+                }
+                .experience-col-two{
+                    overflow: hidden;
+                    border-radius: 0 12px 12px 0;
+                }
+            }
+        }
+    }
+}
+/*section oportunity*/

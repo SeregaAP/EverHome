@@ -660,6 +660,16 @@ h2 {
   position: relative;
 }
 
+.about .Trusted .trusted_dicorate {
+  position: absolute;
+  left: 0;
+  bottom: -200px;
+}
+
+.about .Trusted .trusted_dicorate img {
+  width: 250px;
+}
+
 .about .Trusted .Trusted__content {
   position: relative;
   top: 100px;
@@ -725,4 +735,186 @@ h2 {
 }
 
 /*section about*/
+/*section oportunity*/
+.oportunity {
+  padding: 200px 0 50px 0;
+  background: #DBEAFB;
+}
+
+.oportunity .titles {
+  margin-bottom: 30px;
+}
+
+.oportunity .titles .titles__cont {
+  text-align: center;
+}
+
+.oportunity .titles .titles__cont h2 {
+  margin-bottom: 20px;
+}
+
+.oportunity .titles .titles__cont p {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #252525;
+}
+
+.oportunity .oportunity-garant .oportunity-garant-cont {
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 50px 30px;
+}
+
+.oportunity .oportunity-garant .oportunity-garant-cont h4 {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 130%;
+  color: #252525;
+  margin-bottom: 20px;
+}
+
+.oportunity .oportunity-garant .oportunity-garant-cont .oportunity-garant-list .oportunity-garant-list-itm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+.oportunity .oportunity-garant .oportunity-garant-cont .oportunity-garant-list .oportunity-garant-list-itm img {
+  margin-right: 10px;
+}
+
+.oportunity .oportunity-garant .oportunity-garant-cont .oportunity-garant-list .oportunity-garant-list-itm p {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #252525;
+  margin: 0;
+}
+
+.oportunity .oportunity-garant .oportunity-garant-form {
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 50px 30px;
+}
+
+.oportunity .oportunity-garant .oportunity-garant-form h4 {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 125%;
+  color: #252525;
+  margin-bottom: 12px;
+}
+
+.oportunity .oportunity-garant .oportunity-garant-form p {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 130%;
+  color: #252525;
+}
+
+.oportunity .oportunity-garant .oportunity-garant-form .input-groups {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #72717146;
+  margin-bottom: 27px;
+}
+
+.oportunity .oportunity-garant .oportunity-garant-form .input-groups img {
+  margin-right: 15px;
+}
+
+.oportunity .oportunity-garant .oportunity-garant-form .input-groups input {
+  outline: none;
+  border: none;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  color: #252525;
+}
+
+.oportunity .experience {
+  padding: 80px 0 40px 0;
+}
+
+.oportunity .experience .titles .titles__cont {
+  text-align: center;
+}
+
+.oportunity .experience .titles .titles__cont h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 120%;
+}
+
+.oportunity .experience .titles .titles__cont p {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #252525;
+}
+
+.oportunity .experience .experience-cont .experience-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.oportunity .experience .experience-cont .experience-block .experience-col {
+  width: 50%;
+}
+
+.oportunity .experience .experience-cont .experience-block .experience-col-one {
+  background: #FFFFFF;
+  border-radius: 12px 0 0 12px;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.oportunity .experience .experience-cont .experience-block .experience-col-one .experience-col-txt p {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 140%;
+  color: #252525;
+  max-width: 300px;
+}
+
+.oportunity .experience .experience-cont .experience-block .experience-col-one .experience-col-txt p span {
+  color: #0071B6;
+  font-weight: 700;
+}
+
+.oportunity .experience .experience-cont .experience-block .experience-col-two {
+  overflow: hidden;
+  border-radius: 0 12px 12px 0;
+}
+
+/*section oportunity*/
 /*# sourceMappingURL=style.css.map */
