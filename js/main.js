@@ -23,4 +23,13 @@ $(document).ready(() =>{
         prevArrow: $('.bt-next'),
         nextArrow: $('.bt-back')
     });
+    //adwentage slider
+    $('.adwentage-slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        prevArrow: $('.adwentage-slider-next'),
+        nextArrow: $('.adwentage-slider-back')
+    });
 });
