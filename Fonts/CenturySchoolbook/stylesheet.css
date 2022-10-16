@@ -1,12 +1,11 @@
 @font-face {
-    font-family: 'Century-Schoolbook';
-    src: url('Century-Schoolbook-Bold.eot');
-    src: url('Century-Schoolbook-Bold.eot?#iefix') format('embedded-opentype'),
-        url('Century-Schoolbook-Bold.woff2') format('woff2'),
-        url('Century-Schoolbook-Bold.woff') format('woff'),
-        url('Century-Schoolbook-Bold.ttf') format('truetype'),
-        url('Century-Schoolbook-Bold.svg#Century-Schoolbook-Bold') format('svg');
-    font-weight: 100;
+    font-family: 'Century Schoolbook';
+    src: url('CenturySchoolbook-Bold.eot');
+    src: url('CenturySchoolbook-Bold.eot?#iefix') format('embedded-opentype'),
+        url('CenturySchoolbook-Bold.woff') format('woff'),
+        url('CenturySchoolbook-Bold.ttf') format('truetype'),
+        url('CenturySchoolbook-Bold.svg#CenturySchoolbook-Bold') format('svg');
+    font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
