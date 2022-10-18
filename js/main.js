@@ -143,6 +143,7 @@ $(document).ready(() =>{
       prevArrow: $('.partners-sl-back'),
       nextArrow: $('.partners-sl-next')
   });
+
   //burger btn clic to open menu
   $('.burger-menu').on('click',function(e){
     $($(this)).toggleClass("active");
@@ -157,6 +158,22 @@ $(document).ready(() =>{
   $('.btn-close').on('click',function(e){
     const popup = $(this).attr('data-popup');
     $(popup).hide();
+  });
+  $('.variants-itm-sl-img').on('click',function(e){
+    if(!$(this).hasClass('active')){
+      $(this).siblings().removeClass('active');
+      $(this).addClass('active');
+    }
+    var parent = $(this).parent();
+    parent = $(parent).parent()
+    var length = $(this).parent().children('img').length;
+
+    var parent2 = $(parent).parent().children('.variants-galery-itm-txt');
+    parent2 = $(parent2).children('.slider-nav-info');
+    parent2 = $(parent2).children('.slider-nav-counter');
+    $(parent2).children('.slider-length').text("0"+length);
+    $(parent2).children('.slider-count').text("0"+parseInt($(this).index() + 1));
+    $(parent).children('.variants-galery-itm-preview').attr('src',$(this).attr('src'));
   });
 });
 

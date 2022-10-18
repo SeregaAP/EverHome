@@ -669,7 +669,6 @@ h2{
                 font-weight: 700;
                 font-size: 40px;
                 line-height: 130%;
-                margin-bottom: 15px;
                 
             }
             p{
@@ -677,19 +676,22 @@ h2{
                 color: $txt-color-24;
                 display: block;
                 padding: 6px 8px;
-                max-width: 460px;
+                max-width: 603px;
                 font-family: 'Manrope';
                 font-style: normal;
                 font-weight: 500;
                 font-size: 16px;
                 line-height: 130%;
-                margin-bottom: 15px;
+                margin-bottom: 0;
             }
             .offer_subtitle{
                 color: $txt-color-25;
+                font-family: 'Manrope';
+                font-style: normal;
                 font-weight: 400;
                 font-size: 20px;
                 line-height: 150%;
+                margin-bottom: 10px;
             }
         }
     }
@@ -700,7 +702,7 @@ h2{
     position: relative;
     .steps__cards{
         position: absolute;
-        top: -200px;
+        top: -280px;
         width: 100%;
         .steps__cards_block{
             display: flex;
@@ -708,11 +710,11 @@ h2{
             padding: 0 20px;
             background: rgba(255, 255, 255, 0.97);
             border: 1px solid rgba(236, 236, 236, 0.1);
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-            border-radius: 20px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+            border-radius: 20px 20px 0px 0px;
             .steps__cards_item{
                 text-align: center;
-                padding: 20px;
+                padding: 20px 20px 10px 20px;
                 width: 250px;
                 img{
                     width: 80px;
@@ -724,7 +726,7 @@ h2{
                         font-style: normal;
                         font-weight: 700;
                         font-size: 20px;
-                        line-height: 130%;
+                        line-height: 120%;
                         color:$txt-color-25
                     }
                     p{
@@ -745,7 +747,7 @@ h2{
 .about{
     position: relative;
     overflow: hidden;
-    padding: 150px 0 0 0;
+    padding: 80px 0 0 0;
     .about-paralax{
         position: absolute;
         top: 300px;
@@ -818,6 +820,157 @@ h2{
     }
 }
 /*section about*/
+/*Variants*/
+.variants{
+    padding: 80px 0 0 0;
+    .titles{
+        margin-bottom: 40px;
+        .titles__cont{
+            text-align: center;
+            h2{
+                color: $txt-color-25;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 44px;
+                line-height: 120%;
+            }
+        }
+    }
+    .variants-cont{
+        .variants-menu{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            .variants-menu-one,
+            .variants-menu-two{
+                display: flex;
+                .variants-menu-label{
+                    margin-right: 17px;
+                    span{
+                        font-family: 'Manrope';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 27px;
+                        color: #313131;
+                    }
+                }
+                .variants-menu-items{
+                    ul{
+                        display: flex;
+                        li{
+                            margin-right: 7px;
+                            a{
+                                font-family: 'Manrope';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 20px;
+                                line-height: 27px;
+                                color: #9C9C9C;
+                                &.active{
+                                    color: $txt-color-blue;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .variants-galery{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 20px;
+            .variants-galery-itm{
+                overflow: hidden;
+                border-radius: 10px;
+                box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+                .variants-galery-itm-sl{
+                    .variants-galery-itm-preview{
+                        margin-bottom: 10px;
+                    }
+                    .variants-galery-itm-images{
+                        width: 350px;
+                        margin: 0 auto;
+                        display: grid;
+                        grid-template-columns: 1fr 1fr 1fr 1fr;
+                        column-gap: 3px;
+                        .variants-itm-sl-img{
+                            width: 100%;
+                            cursor: pointer;
+                            &.active{
+                         
+                                border: 4px solid rgb(255, 255, 255);
+                            }
+                        }
+                    }
+                }
+                .variants-galery-itm-txt{
+                    padding:20px;
+                    .slider-nav-info{
+                        .slider-nav-counter{
+                            display: flex;
+                            align-items: center;
+                            .slider-count-delimetr{
+                                display: block;
+                                width: 70px;
+                                margin: 0 7px;
+                                height: 2px;
+                                background: #0082D0;
+                            }
+                        }
+                    }
+                    h5{
+                        font-family: 'Manrope';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 30px;
+                        line-height: 120%;
+                        color: #000;
+                        margin-bottom: 10px;
+                    }
+                    p{
+                        font-family: 'Manrope';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 24px;
+                        line-height: 120%;
+                        color: #000;
+                    }
+                    .detail{
+                        display: flex;
+                        justify-content: space-between;
+                        margin-bottom: 10px;
+                        .price{
+                            font-family: 'Manrope';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 24px;
+                            line-height: 120%;
+                            color: #414042;
+                        }
+                        .room-count{
+                            font-family: 'Manrope';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 25px;
+                            color: #414042;
+                        }
+                        .square{
+                            font-family: 'Manrope';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 18px;
+                            line-height: 25px;
+                            color: #414042;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*Variants*/
 /*section Trusted*/
 .Trusted{
     position: relative;
@@ -1715,7 +1868,7 @@ h2{
 /*----------container window popup accepted---------*/
 .popup-accepted{
     position: fixed;
-
+    display: none;
     top: 0;
     left: 0;
     width: 100%;
@@ -1783,7 +1936,7 @@ h2{
 /*steps*/
 .steps{
     .steps__cards{
-        top: -150px;
+        top: -170px !important;
     }
 }
 /*steps*/
