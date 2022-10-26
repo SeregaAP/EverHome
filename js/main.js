@@ -184,12 +184,14 @@ $(document).ready(() =>{
   });
   //open popup manager window
   $('.btn-popup-manager').on('click',function(e){
+    $('body').css('overflow-y','hidden');
     e.preventDefault();
     $('.variant-modal').css('display','none');
     $('.popup-manager').show();
   });
   //close popup manager window
   $('.btn-close').on('click',function(e){
+    $('body').css('overflow-y','scroll');
     const popup = $(this).attr('data-popup');
     $(popup).hide();
   });
@@ -272,22 +274,7 @@ $(document).ready(() =>{
     //console.log($(galery_tabs).children().length);
   });
   ////////////////////////////////////////////////////////////////////////////////////
-  $('.variants-itm-sl-img').on('click',function(e){
-    if(!$(this).hasClass('active')){
-      $(this).siblings().removeClass('active');
-      $(this).addClass('active');
-    }
-    var parent = $(this).parent();
-    parent = $(parent).parent()
-    var length = $(this).parent().children('img').length;
 
-    var parent2 = $(parent).parent().children('.variants-galery-itm-txt');
-    parent2 = $(parent2).children('.slider-nav-info');
-    parent2 = $(parent2).children('.slider-nav-counter');
-    $(parent2).children('.slider-length').text("0"+length);
-    $(parent2).children('.slider-count').text("0"+parseInt($(this).index() + 1));
-    $(parent).children('.variants-galery-itm-preview').attr('src',$(this).attr('src'));
-  });
   $('.tabs-open').on('click',function(e){
     e.preventDefault();
     $('.galery-tabs-content').removeClass('active');
@@ -318,62 +305,55 @@ $(document).ready(() =>{
   variantSliderInit();
   $('.slider-nav-next').on('click',function(e){
     var parent = $(e.target).closest(".variants-galery-itm");
-    var itemTxt = $(parent).children('.variants-galery-itm-txt');
-    itemTxt = $(itemTxt).children('.slider-nav-info');
-    itemTxt = $(itemTxt).children('.slider-nav-counter');
     var items = $(parent).children('.variants-galery-itm-sl');
+    var preview = $(items).children('.variants-galery-itm-preview');
     items = $(items).children('.variants-galery-itm-images');
     var dataCount = items;
     var count = dataCount.attr('data-count');
-    //////////////////
-    var btinit = dataCount.attr('data-bt');
-    if(btinit == "back"){
-      dataCount.attr('data-bt','next')
-      count--;
-    }
-    /////////////////
+
     items = $(items).children('img');
+    $(items).removeClass('active');
     count++;
-    if(count > items.length - 5){
-      count--;
+    if(count > items.length - 1){
+      count = items.length -1;
       dataCount.attr('data-count',count);
+      $(items[count]).addClass('active');
       return;
     }
-    $(items[count]).css('display','none');
+    if(count > 3){
+      $(items[count - 4]).css('display','none');
+    }
+    $(preview).attr('src',$(items[count]).attr('src'));
+    $(items[count]).addClass('active');
     dataCount.attr('data-count',count);
-    //console.log(count);
-    var outText = count + 5;
-    $(itemTxt).children('.slider-count').text("0"+outText);
   });
+  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
   $('.slider-nav-back').on('click',function(e){
     var parent = $(e.target).closest(".variants-galery-itm");
-    var itemTxt = $(parent).children('.variants-galery-itm-txt');
-    itemTxt = $(itemTxt).children('.slider-nav-info');
-    itemTxt = $(itemTxt).children('.slider-nav-counter');
     var items = $(parent).children('.variants-galery-itm-sl');
+    var preview = $(items).children('.variants-galery-itm-preview');
     items = $(items).children('.variants-galery-itm-images');
     var dataCount = items;
     var count = dataCount.attr('data-count');
-    //////////////////
-    var btinit = dataCount.attr('data-bt');
-    if(btinit == "next"){
-      dataCount.attr('data-bt','back')
-      count++;
-    }
-    /////////////////
+
     items = $(items).children('img');
+    $(items).removeClass('active');
     count--;
-    if(count <  0){
+    if(count < 0){
       count = 0;
       dataCount.attr('data-count',count);
+      $(items[count]).addClass('active');
       return;
     }
-    $(items[count]).css('display','block');
+
+   var l = items.length;
+   if(count < (l - 4)){
+      $(items[count]).css('display','block');
+    }
+    $(preview).attr('src',$(items[count]).attr('src'));
+    $(items[count]).addClass('active');
     dataCount.attr('data-count',count);
-    //console.log(count);
-    var outText = count + 4;
-    $(itemTxt).children('.slider-count').text("0"+outText);
   });
   ////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -471,6 +451,7 @@ $(document).ready(() =>{
 
 $(document).on('af_complete', function(event,res) {
   if(res.success){
+      $('body').css('overflow-y','scroll');
       $('.popup-manager').hide();
       $('.popup-accepted').show();
   }
